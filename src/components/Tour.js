@@ -37,6 +37,11 @@ const Tour = (props) => {
           nulla nisi esse et in consequat duis quis commodo deserunt anim.
         </Typography>
       </Box>
+      <Box>
+        <Typography variant="h6" component={"h4"} marginTop={3}>
+          Frequently Asked Questions
+        </Typography>
+      </Box>
     </Container>
   );
 };
