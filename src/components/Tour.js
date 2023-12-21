@@ -4,6 +4,10 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ImageCollage from "./ImageCollage";
 import CustomizedAccordions from "./Accordions";
+import Paper from "@mui/material/Paper";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import BasicModal from "./Modal";
 
 const Tour = (props) => {
   return (
@@ -54,6 +58,14 @@ const Tour = (props) => {
         </Typography>
         <CustomizedAccordions />
       </Box>
+      <Paper
+        sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+        elevation={5}
+      >
+        <BottomNavigation>
+          <BasicModal />
+        </BottomNavigation>
+      </Paper>
     </Container>
   );
 };
