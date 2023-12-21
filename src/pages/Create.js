@@ -6,8 +6,21 @@ import Container from "@mui/material/Container";
 import AcUnitOutlinedIcon from "@mui/icons-material/AcUnitOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles({
+  btn: {
+    fontSize: 60,
+    backgroundColor: "violet",
+    "&:hover": {
+      backgroundColor: "blue",
+    },
+  },
+});
 
 export default function Create() {
+  const classes = useStyles();
+
   return (
     <Container>
       <Typography
@@ -39,10 +52,11 @@ export default function Create() {
           <Button>One</Button>
           <Button>Two</Button>
           <Button
+            className={classes.btn}
             startIcon={<SendOutlinedIcon />}
             endIcon={<MailOutlinedIcon />}
           >
-            Three
+            Send
           </Button>
         </ButtonGroup>
       </Container>
