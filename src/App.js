@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import Create from "./pages/Create";
 import TourCard from "./components/TourCard";
 import Grid from "@mui/material/Grid";
+import "./App.css";
 
 function App() {
   return (
